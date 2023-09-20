@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Toster</title>
+</head>
+
+<body>
+  <header class="header">
+    <h3 class="header__offer">🇿🇦 SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA 🇿🇦</h3>
+    <div class="header__logo">
+      <h1 class="header__title">
+        <img src="assets/images/logo.svg" alt="logo">
+      </h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main__hero hero">
+      <div class="hero__timer">
+        <span>Limited offer</span>
+        <div class="timer">04:51:16</div>
+      </div>
+
+      <div class="hero__price price">
+        <div class="price__old">R 250.00</div>
+        <div class="price__new">R 160.00</div>
+      </div>
+    </section>
+
+    <section class="main__order order">
+      <div class="order__header">
+        <div class="order__rating">Excellent 4.8/5</div>
+        <img src="assets/images/brand.svg" alt="brand" class="order__brand">
+        <div class="order__label">best selling</div>
+      </div>
+
+      <h3 class="order__title">Orthopedic Slippers</h3>
+
+      <div class="order__slider slider">
+        <img class="slider__img" data-slide="first" src="assets/images/black.png" alt="black">
+        <img class="slider__img" src="assets/images/orange.png" alt="orange">
+        <img class="slider__img" src="assets/images/pink.png" alt="pink">
+        <img class="slider__img" src="assets/images/yellow.png" alt="yellow">
+      </div>
+
+      <div class="order__options options">
+        <img class="options__image active" src="assets/images/preview_black.png" alt="black" onClick="setSlide(0)">
+        <img class="options__image" src="assets/images/preview_orange.png" alt="orange" onClick="setSlide(1)">
+        <img class="options__image" src="assets/images/preview_pink.png" alt="pink" onClick="setSlide(2)">
+        <img class="options__image" src="assets/images/previer_yellow.png" alt="yellow" onClick="setSlide(3)">
+      </div>
+
+      <div class="order__info info">
+        <span class="info__text"><strong class="info__bold">Fast Delivery: </strong>2-4 days from SA 🇿🇦</span>
+        <span class="info__text"><strong class="info__bold">In Stock: </strong>Shipping from Johannesburg 🇿🇦</span>
+        <div class="info__rating">
+          <img src="assets/images/rating.svg" alt="rating">
+          <span class="info__text">(10)</span>
+        </div>
+      </div>
+
+      <div class="order__selects selects">
+        <div class="select">
+          <label for="color" value="color">color</label>
+          <select name="color" id="color" class="select__list">
+            <option value="black">BLACK</option>
+            <option value="orange">ORANGE</option>
+            <option value="pink">PINK</option>
+            <option value="yellow">YELLOW</option>
+          </select>
+        </div>
+
+        <div class="select">
+          <label for="size" value="size">size</label>
+          <select name="size" id="size" class="select__list">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="order__button"><a href="http://youtube.com" target="_blank">BUY NOW</a></button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
